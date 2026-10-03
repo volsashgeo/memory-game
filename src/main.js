@@ -82,12 +82,10 @@ function startNewGame() {
   game.startNewGame();
 }
 
-// Обработчики
 ui.newGameBtnHeader.addEventListener("click", () => game.startNewGame());
 ui.winNewGameBtn.addEventListener("click", startNewGame);
 ui.winCloseBtn.addEventListener("click", () => ui.winModal.close());
 ui.leaderboardBtn.addEventListener("click", openLeaderboard);
 ui.lbCloseBtn.addEventListener("click", () => ui.lbModal.close());
 
-// Старт
 startNewGame();

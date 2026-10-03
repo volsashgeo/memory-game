@@ -5,7 +5,6 @@ import { createModal } from "./modal.js";
 export function buildApp() {
   const body = document.body;
 
-  // Хедер
   const title = createElement("h1", {
     className: "header__title",
     textContent: "Игра «Найди пару»",
@@ -29,7 +28,6 @@ export function buildApp() {
     headerButtons,
   ]);
 
-  // Счётчики
   const movesValue = createElement("span", { textContent: "0" });
   const pairsValue = createElement("span", {
     textContent: `0 из ${TOTAL_PAIRS}`,
@@ -42,10 +40,8 @@ export function buildApp() {
     ]),
   ]);
 
-  // Поле
   const gameBoard = createElement("div", { className: "game-board" });
 
-  // Модалка победы
   const winTitle = createElement("h2", {
     className: "modal__title",
     textContent: "Победа!",
@@ -68,7 +64,6 @@ export function buildApp() {
   const winModal = createModal();
   winModal.content.append(winTitle, winText, winButtons);
 
-  // Модалка лидеров
   const lbTitle = createElement("h2", {
     className: "modal__title",
     textContent: "Таблица лидеров",

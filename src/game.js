@@ -43,7 +43,6 @@ export function createGame({ board, onStatsChange, onWin }) {
       [backImg],
     );
 
-    // Универсально: если есть src — используем его, иначе собираем из svg.
     const src = image.src
       ? image.src
       : "data:image/svg+xml;utf8," + encodeURIComponent(image.svg);
