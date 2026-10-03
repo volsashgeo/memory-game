@@ -17,6 +17,6 @@
 Инструкция по локальному запуску приложения:
 
 - Клонировать репозиторий по [ссылке](https://github.com/volsashgeo/memory-game) из VSCode.
-- Перейти в папку игры командой cd memory-game из терминала.
-- перейти в ветку memory-game командой git checkout memory-game или git switch memory-game.
+- Перейти в папку игры командой `cd memory-game` из терминала.
+- перейти в ветку memory-game командой `git checkout memory-game` или `git switch memory-game`.
 - Запустить Live Server и наслаждаться игрой
