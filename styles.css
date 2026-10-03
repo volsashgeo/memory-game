@@ -1,13 +1,9 @@
-/* ============================================================
-   Дизайн-токены
-   ============================================================ */
+
 :root {
-    /* --- Базовый фон страницы --- */
     --color-bg-start: #1e3c72;
     --color-bg-end: #2a5298;
     --color-text: #ffffff;
 
-    /* --- Кнопки --- */
     --color-btn-primary-bg: #ffb703;
     --color-btn-primary-bg-hover: #ffc93c;
     --color-btn-primary-text: #1e3c72;
@@ -18,10 +14,8 @@
     --color-btn-secondary-text: #ffffff;
     --color-btn-secondary-shadow: #2a5fa0;
 
-    /* --- Счётчики --- */
     --color-stats-accent: #ffd166;
 
-    /* --- Карточки --- */
     --color-card-back-start: #2a5298;
     --color-card-back-end: #1e3c72;
     --color-card-back-border: rgba(255, 255, 255, 0.15);
@@ -31,18 +25,15 @@
     --color-card-matched-ring: #06d6a0;
     --color-card-focus-ring: #ffd166;
 
-    /* --- Модальные окна --- */
     --color-overlay: rgba(0, 0, 0, 0.5);
     --color-modal-bg: #ffffff;
     --color-modal-text: #222222;
     --color-modal-shadow: rgba(0, 0, 0, 0.4);
 
-    /* --- Тексты модалок --- */
     --color-title: #1e3c72;
     --color-win-highlight: #e63946;
     --color-empty-message: #6c757d;
 
-    /* --- Таблица лидеров --- */
     --color-table-head-bg: #f1f3f5;
     --color-table-head-text: #1e3c72;
     --color-table-head-border: #dee2e6;
@@ -51,7 +42,6 @@
     --color-place-second: #8d99ae;
     --color-place-third: #b07d3c;
 
-    /* --- Геометрия и типографика (тоже удобно держать здесь) --- */
     --radius-card: 12px;
     --radius-modal: 16px;
     --radius-btn: 8px;
@@ -59,9 +49,6 @@
     --font-family-base: 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
-/* ============================================================
-   Базовые стили
-   ============================================================ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -92,9 +79,6 @@ body.modal-open {
 }
 
 
-/* ============================================================
-   Хедер
-   ============================================================ */
 .header {
     width: 100%;
     max-width: 720px;
@@ -117,9 +101,6 @@ body.modal-open {
     gap: 10px;
 }
 
-/* ============================================================
-   Кнопки
-   ============================================================ */
 .btn {
     border: none;
     border-radius: var(--radius-btn);
@@ -156,9 +137,6 @@ body.modal-open {
     box-shadow: 0 1px 0 var(--color-btn-secondary-shadow);
 }
 
-/* ============================================================
-   Счётчики
-   ============================================================ */
 .stats {
     width: 100%;
     max-width: 720px;
@@ -174,9 +152,6 @@ body.modal-open {
     color: var(--color-stats-accent);
 }
 
-/* ============================================================
-   Игровое поле
-   ============================================================ */
 .game-board {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -256,9 +231,6 @@ body.modal-open {
     box-shadow: inset 0 0 0 4px var(--color-card-matched-ring);
 }
 
-/* ============================================================
-   Модальные окна
-   ============================================================ */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -326,9 +298,6 @@ body.modal-open {
     min-width: 130px;
 }
 
-/* ============================================================
-   Таблица лидеров
-   ============================================================ */
 .leaderboard-table {
     width: 100%;
     border-collapse: collapse;
@@ -372,9 +341,6 @@ body.modal-open {
     font-size: 1.05rem;
 }
 
-/* ============================================================
-   Адаптивность
-   ============================================================ */
 @media (max-width: 480px) {
     .header__title {
         font-size: 1.1rem;
