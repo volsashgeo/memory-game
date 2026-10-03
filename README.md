@@ -1,1 +1,1 @@
-[Деплой](https://github.com/volsashgeo/memory-game)
+[Деплой](https://volsashgeo.github.io/memory-game/)
